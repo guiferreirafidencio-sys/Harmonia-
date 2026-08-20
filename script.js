@@ -1,5 +1,5 @@
 // Troque somente este número (DDD + número, sem símbolos) quando o WhatsApp oficial estiver disponível.
-const HARMONIA_CONFIG = { whatsapp: '' };
+const HARMONIA_CONFIG = { whatsapp: '5511954858149' };
 const header = document.querySelector('.site-header');
 const toggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('nav');
