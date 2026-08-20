@@ -13,5 +13,3 @@ toggle.addEventListener('click', () => { const open = nav.classList.toggle('open
 nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { nav.classList.remove('open'); document.body.classList.remove('menu-open'); toggle.setAttribute('aria-expanded', false); }));
 const observer = new IntersectionObserver(entries => entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); observer.unobserve(e.target); } }), { threshold: .12 });
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-const parallax = document.querySelector('[data-parallax]');
-addEventListener('scroll', () => { if (innerWidth > 800 && parallax) parallax.style.transform = `translateY(${Math.min(scrollY * -.045, 36)}px)`; }, { passive: true });
